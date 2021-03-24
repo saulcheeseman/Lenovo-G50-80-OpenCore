@@ -1,24 +1,20 @@
 # Lenovo-G50-80-OC
 # Introduction
-This is the EFI folder for installing hackintosh in Lenovo G50-80 80E5. I made it from EFI Maker and . For people who want to know how to make the EFI folder for their computer, refer to the wiki (Will be added ASAP)
+This is the EFI folder for installing hackintosh in Lenovo G50-80 80E5. I made it from EFI Maker and the rest by myself.
 # Lenovo G50-80 Basic Specs:
 Type: Laptop
 
-CPU: Intel Core i5-5200U @ 2.2Ghz (Turbo Clock up to 2.7GHz)
+CPU: Intel i7-5500U (4) @ 2.40GHz 
 
 GPU: Intel HD Graphics 5500 
 
-RAM: Samsung DDR3 8GB (1600MHz)
+RAM: DDR3 8GB (1600MHz)
 
-Audio: Conxeant SmartAudio HD (Codec CX20751)
-
-Touchpad: ELAN Pointing Device
-
-Disk: WD Green SSD 240GB
+Audio: Conxeant SmartAudio HD
 
 Ethernet: Realtek RTL8168GU/8111GU PCI Express Gigabit Ethernet
 
-Wifi: Qualcomm Atheros AR9565 Wireless Network Adapter (See HowToEnableQcomAtherosWiFi.md)
+Wifi: Qualcomm Atheros AR9565 Wireless Network Adapter
 
 Bluetooth: Qualcomm Atheros Bluetooth 4.0 (Currently not working)
 
@@ -30,28 +26,23 @@ ThunderBolt Ports: N/A
 1. Hardware Video Decoding : Fully Supported
 2. Audio : Fully Working
 3. WebCam: Fully Working
-4. Card Reader : It is natively not supported by Apple, therefore not working
+4. Card Reader : Not working
 5. CD-Rom Reader&Writer : Fully Working
-6. Ethernet : Working on full speed
-7. Battery Percentage : Haven't tested. I don't have battery in my laptop
-. I lost it
+6. Ethernet : Possibly working? I've had mixed results.
+7. Battery Percentage : Working
 8. SSD/HDD : Fully Working
 9. USB : Fully Working
-10. Bluetooth & WiFi : Working. For Catalina and older
+10. Bluetooth & WiFi : WiFi working, Bluetooth not.
 # Installation
-1. From a real Mac or VM, Get the Install macOS xxx.app. Google it for details (xxx is the version of macOS you want to install on your non-mac PC)
+1. From a real Mac or VM, Get the Install macOS Big Sur.app. Google it for details.
 2. Put the app to /Applications
 3. Insert a USB to Mac or VM and connect it. Take note of the USB name. 
-
-4-1. execute "sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/(Your USB device name) (If you want to install macOS Catalina)
-
-4-2. execute "sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/(Your USB device name) (If you want to install macOS Big Sur)
-
+4. execute "sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/(Your USB device name) (If you want to install macOS Big Sur)
 5. Enter password of root (WARNING: THIS WILL WIPE DATA ON THE SELECTED DRIVE. BE EXTRA CAREFUL)
 6. Wait until the making of bootable macOS Drive finishs 
-7. Mount the USB's EFI using ESP Mounter Pro or any other EFI mounter, copy and paste the EFI Folder in releases page. (Note : the structure should be /EFI/EFI/OC, /EFI/EFI/BOOT)
-8. In the PC that you want to run Macintosh, enter Boot Menu and boot from USB
-9. As some texts passes, just wait.
+7. Mount the USB's EFI using Terminal by typing "diskutil list" and find your USB named most likely "Install macOS Big Sur" above or below it there should be an EFI partition with the identifier something like "disk2s1" once you know the identifier type "sudo diskutil mount disk2s1" it will ask for your password and it should be mounted and copy the files from the zip file on the Releases page onto the EFI partition.
+8. In the Laptop that you want to run Macintosh, enter Boot Menu and boot from USB
+9. It may take a while to boot depending on what USB you have, just wait.
 10. If the installer appears, then you're in the right place. Go to disk utility and Wipe the Disk as APFS. (WARNING: THIS WILL WIPE DATA ON THE SELECTED DRIVE. BE EXTRA CAREFUL)
 11. Exit the disk utility and install macOS as instructed.
 12. The computer will reboot 2~3 times. This is very normal and just select 'preboot' on every bootloader menu. 
