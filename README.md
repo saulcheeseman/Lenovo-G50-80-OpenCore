@@ -29,15 +29,16 @@ ThunderBolt Ports: N/A
 4. Card Reader : Not working
 5. CD-Rom Reader&Writer : Fully Working
 6. Ethernet : Possibly working? I've had mixed results.
-7. Battery Percentage : Working
+7. Battery Percentage : Fully Working
 8. SSD/HDD : Fully Working
 9. USB : Fully Working
 10. Bluetooth & WiFi : WiFi working, Bluetooth not.
+11. Sleep : Semi-working, it goes to sleep and wakes up instantly, I'm currently trying to fix this.
 # Installation
 1. From a real Mac or VM, Get the Install macOS Big Sur.app. Google it for details.
 2. Put the app to /Applications
 3. Insert a USB to Mac or VM and connect it. Take note of the USB name. 
-4. execute "sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/(Your USB device name) (If you want to install macOS Big Sur)
+4. execute "sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/(Your USB device name)
 5. Enter password of root (WARNING: THIS WILL WIPE DATA ON THE SELECTED DRIVE. BE EXTRA CAREFUL)
 6. Wait until the making of bootable macOS Drive finishs 
 7. Mount the USB's EFI using Terminal by typing "diskutil list" and find your USB named most likely "Install macOS Big Sur" above or below it there should be an EFI partition with the identifier something like "disk2s1" once you know the identifier type "sudo diskutil mount disk2s1" it will ask for your password and it should be mounted and copy the files from the zip file on the Releases page onto the EFI partition.
@@ -45,7 +46,7 @@ ThunderBolt Ports: N/A
 9. It may take a while to boot depending on what USB you have, just wait.
 10. If the installer appears, then you're in the right place. Go to disk utility and Wipe the Disk as APFS. (WARNING: THIS WILL WIPE DATA ON THE SELECTED DRIVE. BE EXTRA CAREFUL)
 11. Exit the disk utility and install macOS as instructed.
-12. The computer will reboot 2~3 times. This is very normal and just select 'preboot' on every bootloader menu. 
+12. The computer will reboot 2~3 times. This is very normal and just let it do it do it's thing unless user interaction is required. 
 13. If it was successful, the mac setup screen will appear. 
 14. Finish Setup.
 15. Go back into Terminal and mount the SSD/HDD EFI and your USB'S EFI
