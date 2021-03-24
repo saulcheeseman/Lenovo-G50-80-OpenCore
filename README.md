@@ -47,6 +47,11 @@ ThunderBolt Ports: N/A
 11. Exit the disk utility and install macOS as instructed.
 12. The computer will reboot 2~3 times. This is very normal and just select 'preboot' on every bootloader menu. 
 13. If it was successful, the mac setup screen will appear. 
+14. Finish Setup.
+15. Go back into Terminal and mount the SSD/HDD EFI and your USB'S EFI
+16. Copy the EFI files from the USB to your SSD/HDD
+17. Unplug USB and reboot to test.
+18. Done.
 
 
 # If you encounter any problems during install, or there is something that doesn't work, please open a new issue with photos.
