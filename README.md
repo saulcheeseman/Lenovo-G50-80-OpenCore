@@ -28,7 +28,7 @@ ThunderBolt Ports: N/A
 3. WebCam: Fully Working
 4. Card Reader : Not working
 5. CD-Rom Reader&Writer : Fully Working
-6. Ethernet : Possibly working? I've had mixed results.
+6. Ethernet : Possibly working? I've had mixed results. Please tell me if it's working.
 7. Battery Percentage : Fully Working
 8. SSD/HDD : Fully Working
 9. USB : Fully Working
