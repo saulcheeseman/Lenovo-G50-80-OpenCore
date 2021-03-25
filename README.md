@@ -33,7 +33,7 @@ ThunderBolt Ports: N/A
 8. SSD/HDD : Fully Working
 9. USB : Fully Working
 10. Bluetooth & WiFi : WiFi working, Bluetooth not.
-11. Sleep : Working
+11. Sleep : Fully Working
 # Installation
 1. From a real Mac or VM, Get the Install macOS Big Sur.app. Google it for details.
 2. Put the app to /Applications
