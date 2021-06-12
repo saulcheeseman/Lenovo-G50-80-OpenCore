@@ -1,4 +1,5 @@
 # Lenovo-G50-80-OC
+!! I am working on getting Monterey on this laptop !!
 # Introduction
 This is the EFI folder for installing hackintosh in Lenovo G50-80 80E5. I made it from EFI Maker and the rest by myself.
 # Lenovo G50-80 Basic Specs:
