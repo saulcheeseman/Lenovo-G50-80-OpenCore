@@ -1,5 +1,5 @@
 # Lenovo-G50-80-OC
-!! I am working on getting Monterey on this laptop !!
+!! Monterey is NOT supported at this time the WiFi kext seems to crash the system on startup if you have an adapter maybe try disabling the kext? !!
 # Introduction
 This is the EFI folder for installing hackintosh in Lenovo G50-80 80E5. I made it from EFI Maker and the rest by myself.
 # Lenovo G50-80 Basic Specs:
